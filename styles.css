@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+body{
+    margin:0;
+    background-color: #dff4ff;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family:"Single Day";
+}
+.btn{
+    background-color: #ec95ff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1.1rem;;
+   position: absolute;
+   right: 0.5rem;
+   bottom:0.5rem;
+   cursor: pointer;
+   font-family: "Single Day";
+     /* transform:rotate(-2deg);  */
+}
+button:hover {
+    background-color:#c43bb4;
+}
+h1,h2,h3,h4,h5,h6{
+  
+    margin: 0;
+}
+.todo{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+background:  #fef1fd;
+padding: 3rem;
+height: 70%;
+width: 60%;
+border-radius: 2rem;
+max-width: 30rem;
+margin-top: 1rem;
+margin-bottom: 0;
+}
+
+h1{
+    
+    text-transform: uppercase;
+    height: 3rem;
+    /* transform: rotate(4deg); */
+    text-align: center;
+    background: #ec95ff;
+    padding: 0.2rem 1.2rem;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    max-width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+.ip{
+    position: relative;
+    display: flex;
+}
+.input-place{
+    width: 100%;
+padding: 1.25rem;
+    border: solid 0.5px #ec95ff;
+    border-bottom: dashed 3px #ea95e0;
+}
+input[type="text"]::placeholder {
+    color: gray;
+  }
+
+.heading{
+    display: flex;
+  margin-bottom: 10px;
+    justify-content: center;
+}
+.todo-container{
+    display: flex;
+    gap:1rem;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+    padding: 1.3rem;
+
+}
+.todos p {
+  display: flex;
+  gap: 1rem;
+  color: black;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.todos .disabled {
+  color: #8f98a8;
+
+}
+
+.disabled{
+    display: flex;
+    text-decoration: line-through;
+} 
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+ 
+  input[type="checkbox"]::before {
+    content: "\2713";
+    display: inline-block;
+    margin-top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem; 
+    font-size: 1.1rem; 
+    text-align: center;
+    border: 0.06rem solid black;
+    border-radius: 50%;
+    color:transparent;
+
+  }
+  
+  input[type="checkbox"]:checked::before {
+    color:black;
+    background-color:#ec95ff;
+    border: 0.06rem solid #ec95ff;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  
+  .counter {
+    border: 0.06rem solid black;
+  }
+  
+  .counter_cont {
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+  }
+  .counter_cont button {
+    border: none;
+    background-color: transparent;
+    color: black ;
+    font-weight: lighter;
+   font-family: "Single Day";
+  cursor: pointer;
+    border: none;
+;
+  }
+  
+  .counter_cont p{
+align-self: center;
+  }
+  .list{
+    height: 15rem;;
+    scrollbar-width: thin;
+  }
+  .list::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  
+  .list::-webkit-scrollbar-thumb {
+    background-color:#d3d3d3;
+    border-radius: 0.5rem;
+  }
+  
+  .list::-webkit-scrollbar-track {
+    display: none;
+  }
+  footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-bottom: 0;
+}
+
+.made {
+  font-weight: 300;
+}
+
